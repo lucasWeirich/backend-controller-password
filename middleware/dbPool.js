@@ -4,7 +4,7 @@ module.exports = async function dbPool(req, res, next) {
 
     try {
         req.dbConn = await mysql.createConnection({
-            host: '192.168.1.7',
+            host: '192.168.1.7:3306',
             user: 'controller_password_lucas',
             password: 'controller_password',
             database: 'controller_password'

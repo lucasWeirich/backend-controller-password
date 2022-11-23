@@ -23,5 +23,5 @@ require('./routes')(app);
 //----------------------------------------------------------------------------------------------------------
 //
 app.listen(port, () => {
-    console.log('Server initialized in port: http://127.0.0.1:2222');
+    console.log(`Server initialized in port: ${port}`);
 });

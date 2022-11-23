@@ -4,6 +4,7 @@ const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
 const dbPool = require('./middleware/dbPool');
+const port = process.env.PORT || 3000;
 
 //-----------------------------------------------------------------------------------------------------------
 // Inicialização e configurações do express.
@@ -21,6 +22,6 @@ require('./routes')(app);
 
 //----------------------------------------------------------------------------------------------------------
 //
-app.listen(2222, () => {
+app.listen(port, () => {
     console.log('Server initialized in port: http://127.0.0.1:2222');
 });
